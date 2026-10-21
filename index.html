@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fask Support Triage</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="hero">
+    <section class="panel intro">
+      <p class="eyebrow">Fask customer portal workflow</p>
+      <h1>Support message triage</h1>
+      <p class="lede">Classify inbound customer messages by intent, urgency, owner, and next action so support and engineering handoffs stay specific.</p>
+      <div class="badges">
+        <span>Intent routing</span>
+        <span>Urgency detection</span>
+        <span>Handoff notes</span>
+      </div>
+    </section>
+    <section class="panel workspace">
+      <label for="logInput">Customer messages</label>
+      <textarea id="logInput" spellcheck="false" placeholder="Paste customer messages here. Separate messages with a blank line."></textarea>
+      <div class="actions">
+        <button id="triageButton" type="button">Triage messages</button>
+      </div>
+      <section id="results" class="results" aria-live="polite">
+        <p class="empty-state">Paste one or more customer messages to triage.</p>
+      </section>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
